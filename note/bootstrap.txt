@@ -1,0 +1,38 @@
+bootstrap :open source front-end development framework for the creation of websites and web apps.(html/css/js) 
+As a framework, Bootstrap includes the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system.
+=>
+1- <meta name="viewport" content="width=device-width, initial-scale=1"> //this link in first project
+2- https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js // this link to use js 
+3-https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css // this link to use css
+
+
+The .container ==> The .container class creates a container with a fixed width that changes depending on the screen size.
+
+The .container-fluid ==>class creates a container that always spans the full width of the viewport, regardless of screen size.
+
+lead: This class is typically used to make the text stand out as a prominent or important part of the content. In Bootstrap (which this looks like it’s from), the lead class increases the font size and adds some padding, giving the text more emphasis compared to regular body text.
+
+text-muted: This class is used to make the text appear lighter or softer in color, usually a shade of gray. It doesn’t make the text invisible or completely faint, but it reduces the contrast, creating a more subtle look. This is useful for text that should be noticeable but not too bold or dominant, such as secondary information or descriptions.
+
+In Bootstrap, tooltips are small pop-up boxes that appear when you hover over, focus on, or tap on an element. They are used to provide additional information or context for a specific element, without cluttering the interface. Typically, tooltips display text, but you can also use them to give users hints about functionality or describe an element in more detail.
+Key Attributes:
+data-bs-toggle="tooltip": This attribute tells Bootstrap that this element will trigger a tooltip.
+title: The content of the tooltip. This is what users will see when they hover over the element.
+data-bs-placement: Determines where the tooltip appears in relation to the target element. Possible values include top, right, bottom, and left.
+
+In Bootstrap, modals are a component that allows you to display content in an overlay dialog, typically for notifications, forms, or interactive elements. They help create a more immersive experience by focusing the user’s attention on a specific piece of content while dimming the background 
+Modal Components and Attributes:
+data-bs-toggle="modal": This is used on the trigger element (like a button) to indicate that it will open a modal when clicked.
+data-bs-target="#exampleModal": This links the button to the modal's id. When clicked, it will show the modal with this specific ID.
+data-bs-dismiss="modal": This is used on close buttons or any elements that will close the modal.
+Modal Structure:
+<div class="modal fade" id="exampleModal">: The modal container with fade class to apply a fade-in animation when it appears.
+<div class="modal-dialog">: This contains the modal content and determines the layout.
+<div class="modal-content">: This contains the actual content of the modal, broken into:
+Modal Header: Typically contains the title and a close button.
+Modal Body: The main content area where you can add text, forms, images, etc.
+Modal Footer: Contains action buttons like "Close" and "Save changes."
+
+tabindex="-1":When the modal opens, the focus should shift to the modal content (usually the close button or the first interactive element inside). With tabindex="-1" on the modal, you can then programmatically control where the focus goes when the modal is shown. This enhances accessibility for keyboard and screen reader users.
+aria-labelledby="modal-title":
+This attribute is used for accessibility purposes and helps screen readers understand the relationship between the modal and its title.
